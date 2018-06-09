@@ -32,8 +32,6 @@ static const struct block_cpt_entry_str cpt_testnet[] = {
    {      0, "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943" },
 };
 
-// We are starting storing headers only from block #452715 - there are no transactions that 
-// are interesting for us before that block!
 static const struct block_cpt_entry_str cpt_main[] = {
    {      0, "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f" },
    {  11111, "0000000069e244f73d78e8fd29ba2fd2ed618bd6fa2ee92559f542fdb26e7c1d" },
