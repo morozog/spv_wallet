@@ -6,7 +6,7 @@
 #include "hash.h"
 #include "btc-message.h"
 
-#define INITIAL_HEIGHT 452715
+#define INITIAL_HEIGHT 0
 
 struct blockstore;
 struct config;
