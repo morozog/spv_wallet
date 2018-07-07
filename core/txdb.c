@@ -1164,6 +1164,7 @@ txdb_remember_tx(struct txdb   *txdb,
    struct tx_entry *txe;
    char hashStr[80];
    int res;
+   int64 txcredit; 
 
    ASSERT(txHash);
    ASSERT(relevant);
@@ -1204,6 +1205,10 @@ txdb_remember_tx(struct txdb   *txdb,
    }
 
    txdb_export_tx_info(txdb);
+
+   // Recalculating tx credit to get list of OP_RETURN messages for our bot
+   txcredit = txdb_get_tx_credit(&txe->tx);
+
    if (bitc_state_ready()) {
       int64 value = txdb_get_tx_credit(&txe->tx) - txdb_get_tx_debit(&txe->tx);
 
