@@ -16,7 +16,7 @@ make
 ```
 
 #### Modifications
-Modifications that enable bitc working with Neuromesh are following:
+Modifications are as follows:
 - Reduced footprint: ~1mb of header files instead of 35mb in the original version
 - Watch-only wallet - fetching transactions in the read-only mode based only on the public key without necessety to provide the private key
-- Storing OP_RETURN messages - OP_RETURN scripts are stored separately for Neuro Node to parse them.
+- Storing OP_RETURN messages - OP_RETURN scripts are stored separately to parse them.
